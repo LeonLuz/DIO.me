@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e Radio</title>
+</head>
+<body>
+    <form method="post">
+        <h3>Você selecionou: Pizza Calabresa</h3>
+        <p>Quais opcionais você deseja?</p>
+            <input type="checkbox" name="opcionail[]" value="queijo"> + queijo <br>
+            <input type="checkbox" name="opcionail[]" value="calabresa"> + calabresa <br>
+            <input type="checkbox" name="opcionail[]" value="cebola"> + cebola <br>
+            <input type="checkbox" name="opcionail[]" value="azeitona"> + azeitona <br>
+        <p>Borda recheada?</p>
+            <input type="radio" name="borda" value="Sim"> Sim <br>
+            <input type="radio" name="borda" value="Não"> Não <br>
+        <p>Bebida:</p>
+            <input type="radio" name="bebida" value="Suco"> Suco <br>
+            <input type="radio" name="bebida" value="Refrigerante"> Refrigerante <br>
+            <input type="radio" name="bebida" value="Água"> Água <br>
+            <input type="radio" name="bebida" value="Nenhum"> Nenhum <br>
+
+            <button type="submit">Enviar Pedido</button>
+    </form>
+</body>
+</html>
+
+<!-- Checkbox aceita mais de um valor, necessitando de [] para indicar ao servidor que é uma lista de valores -->
+<!-- Radio só aceita um valor ou outro, necessitando que o name seja o mesmo -->

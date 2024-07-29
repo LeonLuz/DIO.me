@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+</head>
+<body>
+    <form onsubmit="" method="get">
+        <label>Nome *: </label><input type="text" name="name" required><br>
+        <label>Idade *: </label><input type="number" name="age" required><br>
+        <label>Password *: </label><input type="password" name="password" required><br>
+
+        <button type="button" onclick="alert('Cliquei aqui')">Clicável</button><br>
+        <button type="reset">Limpar</button><br>
+        <button type="submit">Enviar</button><br>
+    </form>
+</body>
+</html>
+<!-- <button type="button"> só executa algo quando aplicamos JavaScript -->
+<!-- <button type="reset"> limpa todos os campos do formulário em que está inserido -->
+<!-- É interessante passar um evento onsubmit na tag <form> para validar os dados antes do envio -->

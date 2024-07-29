@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            border: solid 1px gray;
+            box-shadow: 3px 3px 5px;
+        }
+        #title{
+            background-color: black;
+            color: white;
+        }
+        table tbody tr:nth-child(even) td{
+            background-color: #f1f1f1;
+        }
+        table tbody tr:hover td{
+            cursor: pointer;
+        }
+        table tbody tr td:nth-child(2), table tfoot tr td:nth-child(2){
+            text-align: center;
+        }
+        table thead th,table tfoot td{
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <table width="250" align="center" summary="Descrição da tabela" cellpadding="5">
+        <thead>
+            <tr>
+                <th id="title" colspan="2">Minha Tabela</th>
+            </tr>
+            <tr>
+                <th title="Nome completo">Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Leon</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Diogo</td>
+                <td>37</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>32</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>Total:</td>
+            <td>4</td>
+        </tfoot>
+    </table>
+</body>
+</html>
+<!-- Summary deve ser uma descrição detalhada do objetivo e dados da tabela -->
+<!-- Caption pode ser utilizado como um título para a tabela (aparece para o usuário) -->

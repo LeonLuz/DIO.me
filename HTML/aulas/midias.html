@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Mídias</title>
+</head>
+<body>
+    <img src="" title="Nome" alt="Descrição detalhada da imagem"/>
+    <audio controls>
+        <source src="audio.mp4"/>
+        Seu navegador não tem suporte a áudio.
+    </audio>
+    <video controls>
+        <source src="video.mp4"/>
+        <source src="video.webm"/>
+        <track default src="legenda-pt-br.vtt" kind="captions" srclang="pt-br"></track>
+        <track src="legenda.vtt" kind="captions" srclang="en">
+        Seu navegador não tem suporte a vídeo.
+    </video>
+</body>
+</html>
+<!-- tag track é uma tag auxiliar da tag video, atua como legenda -->
+<!-- utilizam arquivos do tipo .vtt ou .srt -->
